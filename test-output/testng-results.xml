@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="184" started-at="2021-03-26T10:19:16 EDT" finished-at="2021-03-26T10:19:17 EDT">
+  <suite name="Default suite" duration-ms="135" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="184" started-at="2021-03-26T10:19:16 EDT" finished-at="2021-03-26T10:19:17 EDT">
+    <test name="Default test" duration-ms="135" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
       <class name="com.test.dictionary.WordResolver">
-        <test-method status="PASS" signature="alphanumericWords()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="alphanumericWords" duration-ms="31" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="alphanumericWords()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="alphanumericWords" duration-ms="23" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alphanumericWords -->
-        <test-method status="PASS" signature="capitalLetters()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="capitalLetters" duration-ms="2" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="capitalLetters()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="capitalLetters" duration-ms="2" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- capitalLetters -->
-        <test-method status="PASS" signature="emptyCharacter()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="emptyCharacter" duration-ms="2" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="emptyCharacter()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="emptyCharacter" duration-ms="2" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyCharacter -->
-        <test-method status="PASS" signature="matchWords()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="matchWords" duration-ms="3" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="matchValidWord()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="matchValidWord" duration-ms="1" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- matchWords -->
-        <test-method status="PASS" signature="matchnullWords()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="matchnullWords" duration-ms="2" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        </test-method> <!-- matchValidWord -->
+        <test-method status="PASS" signature="matchnullWords()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="matchnullWords" duration-ms="3" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- matchnullWords -->
-        <test-method status="PASS" signature="repeatedLetters()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="repeatedLetters" duration-ms="2" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="repeatedLetters()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="repeatedLetters" duration-ms="2" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- repeatedLetters -->
-        <test-method status="PASS" signature="specialChar()[pri:0, instance:com.test.dictionary.WordResolver@1bc49bc5]" name="specialChar" duration-ms="2" started-at="2021-03-26T10:19:17 EDT" finished-at="2021-03-26T10:19:17 EDT">
+        <test-method status="PASS" signature="specialChar()[pri:0, instance:com.test.dictionary.WordResolver@20398b7c]" name="specialChar" duration-ms="2" started-at="2021-03-26T12:31:15 EDT" finished-at="2021-03-26T12:31:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- specialChar -->

@@ -1,4 +1,3 @@
-
 package com.test.dictionary;
 
 import org.testng.annotations.Test;
