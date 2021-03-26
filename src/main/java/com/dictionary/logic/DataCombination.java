@@ -1,15 +1,13 @@
-package dictionary;
+package com.dictionary.logic;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Dictionary {
+public class DataCombination {
+	int SIZE = 26;
+	Set<String> words = new HashSet<String>();
 
-	static final int SIZE = 26;
-	static String Dict[] = { "solve", "resolve", "serve","severe","lever", "sore","goal", "boy", "run" };
-    static Set<String> words=new HashSet<String>();
-	// trie Node
-	static class TrieNode {
+	public class TrieNode {
 		TrieNode[] Child = new TrieNode[SIZE];
 
 		// isLeaf is true if the node represents
@@ -24,10 +22,12 @@ public class Dictionary {
 		}
 	}
 
+// trie Node
+
 	// If not present, inserts key into trie
 	// If the key is prefix of trie node, just
 	// marks leaf node
-	static void insert(TrieNode root, String Key) {
+	public void insert(TrieNode root, String Key) {
 		int n = Key.length();
 		TrieNode pChild = root;
 
@@ -39,39 +39,17 @@ public class Dictionary {
 
 			pChild = pChild.Child[index];
 		}
-
 		// make last node as leaf node
 		pChild.leaf = true;
 	}
 
-	static boolean isEnglishWord(String str) {
-		
-
-		// Root Node of Trie
-		
-
-		// insert all words of dictionary into trie
-		int n = Dict.length;
-		for (int i = 0; i < n; i++)
-		{		
-		if(str.equals(Dict[i]))
-			return false;
-		
-		}
-		return true;
-		
-
-	}
-
 	// A recursive function to print all possible valid
 	// words present in array
-	static void searchWord(TrieNode root, boolean Hash[], String str) {
+	public void searchWord(TrieNode root, boolean Hash[], String str) {
 		// if we found word in trie / dictionary
-		
-		if (root.leaf == true)
-		{
+
+		if (root.leaf == true) {
 			words.add(str);
-			
 		}
 
 		// traverse all child's of current root
@@ -85,15 +63,15 @@ public class Dictionary {
 				searchWord(root.Child[K], Hash, str + c);
 			}
 		}
-		
+
 	}
 
 	// Prints all words present in dictionary.
-	static Set<String> PrintAllWords(char Arr[], TrieNode root, int n) {
-		// create a 'has' array that will store all
-		// present character in Arr[]
+	public Set<String> PrintAllWords(char Arr[], TrieNode root, int n) {
+
+		// create a 'hash' array (Hash[]) that will store all present characters
+
 		boolean[] Hash = new boolean[SIZE];
-		
 
 		for (int i = 0; i < n; i++)
 			Hash[Arr[i] - 'a'] = true;
@@ -101,7 +79,7 @@ public class Dictionary {
 		// temporary node
 		TrieNode pChild = root;
 
-		// string to hold output 
+		// string to hold output
 		String str = "";
 
 		// Traverse all matrix elements. There are only
@@ -116,9 +94,9 @@ public class Dictionary {
 				str = "";
 			}
 		}
-		
-		return words;
-	
+
+		return words; // Returning set of all the possible combinations of the string from dictionary
+
 	}
 
 }

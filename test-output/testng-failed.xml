@@ -5,8 +5,7 @@
     <classes>
       <class name="dictionary.WordResolver">
         <methods>
-          <include name="tearup"/>
-          <include name="matchWords"/>
+          <include name="matchnullWords"/>
         </methods>
       </class> <!-- dictionary.WordResolver -->
     </classes>
